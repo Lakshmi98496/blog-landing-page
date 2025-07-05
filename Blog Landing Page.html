@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+       <title>Web Dev Blog</title> 
+       <style>
+       * {
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body {
+            font-family: 'Segoe UI',sans-serif;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            padding:20px;
+        }
+        .container {
+            max-width:900px;
+            margin:auto;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding:15px;
+            margin-bottom: 30px;
+            border-radius:8px;
+        }
+        nav a{
+            color:white;
+            text-decoration: none;
+            margin-right:20px;
+            font-weight:bold;
+            transition:color 0.3s ease;
+        }
+        nav a:hover{
+            color:#ffcc00;
+            text-decoration:underline;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size:32px;
+            color:#333;
+        }
+        p.subtitle {
+            margin-bottom:30px;
+            color:#666;
+        }
+        .post {
+            background-color: #fff;
+            padding:20px;
+            margin-bottom: 25px;
+            border-radius:8px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        }
+        .post h2 {
+            color:#444;
+            margin-bottom:10px;
+        }
+        .post p {
+            color:#666;
+            margin-bottom:15px;
+        }
+        .post button {
+            background-color: #007BFF;
+            color:white;
+            border:none;
+            padding:8px 15px;
+            border-radius:5px;
+            cursor:pointer;
+            transition:0.3s ease;
+        }
+        .post button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top:40px;
+            color:#888;
+        }   
+        @media(max-width:768px) {
+            nav {
+                flex-direction:column;
+                align-items:center;
+            }
+            nav a{
+                display:block;
+                margin:10px 0;
+            }
+            .post {
+                padding:10px;
+            }
+        }
+       </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <h1>Welcome to Web Dev Blog</h1>
+            <p class="subtitle">Explore tutorials, tips and tools for modern web development.</p>
+            <div class="post">
+                <h2>Understanding the Basics of Web Development</h2>
+                <p>Learn how HTML,CSS and Javascript form the foundation of all modern websites and web apps.</p>
+                <button>Read More</button>
+            </div>
+            <div class="post">
+                <h2>Top 10 CSS Tricks Every Developer Should Know</h2>
+                <p>Improve your frontend skills with these powerful CSS techniques for layout, animation and design.</p>
+                <button>Read More</button>
+            </div>
+            <div class="post">
+                <h2>Responsive Design: Making Websites Mobile-Friendly</h2>
+                <p>Explore how media queries and flexible grids make your website look great on any device.</p>
+                <button>Read More</button>
+            </div>
+            <footer>
+                <p>&copy; 2025 Web Dev Blog.All rights reserved.</p>
+            </footer>
+            </div>
+    </body>
+</html>
